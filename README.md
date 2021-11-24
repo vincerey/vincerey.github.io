@@ -1,37 +1,29 @@
-## Welcome to GitHub Pages
+# water.js  ![](https://img.shields.io/badge/license-MIT-blue) ![](https://img.shields.io/badge/npm-v1.0.1-blue) ![](https://img.shields.io/badge/circleci-passing-brightgreen)
 
-You can use the [editor on GitHub](https://github.com/vincerey/vincerey.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+![](https://github.com/penghuwan/water.js/blob/master/logo.png)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+water.js是一个如何编写一个好玩的readMe的示范例子，它具有以下特点
++ 正式性： 一看就知道这个库是认真写的
++ 优雅性： 给人以美好的视觉感受，和其他黑白两色的readMe区分开来
++ 装笔性：  有利于向他人展示自己代码的美好的一面
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-## Thanks for
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+## Installation
 ```
+npm install water-js
+```
+## Examples
+```js
+const { water } = require('water-js')
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/vincerey/vincerey.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+function print() {
+  const content = water(true);
+  console.log(content);
+}
+```
+output
+```
+// 输出
+我就是来水的
+```
+## License
+Water.js is MIT licensed.
